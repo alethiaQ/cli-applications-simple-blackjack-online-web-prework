@@ -59,7 +59,7 @@ end
 def runner
   welcome
   initial_round
-  prompt_user
+  until card_tot > 21 prompt_user
   input = get_user_input
   hit?
   case input
