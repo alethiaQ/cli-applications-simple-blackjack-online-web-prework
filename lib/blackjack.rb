@@ -57,6 +57,15 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  prompt_user
+  hit?
+  input = get_user_input
+  case input
+  when "s"
+    hit?
+
+  
 end
     
