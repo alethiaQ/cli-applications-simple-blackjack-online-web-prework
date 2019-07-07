@@ -24,12 +24,10 @@ def end_game(card_tot)
 end
 
 def initial_round
- deal_card 
- deal_card
- 
- 
- 
+ card_tot = deal_card + deal_card
+
  display_card_total(card_tot)
+ return card_tot
 end
 
 def hit?
