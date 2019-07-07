@@ -62,7 +62,7 @@ def runner
   card_total = initial_round
     until card_total > 21 do 
     
-    hit?
+     card_total = hit?
     input = get_user_input
     if input == "s"
       hit?
