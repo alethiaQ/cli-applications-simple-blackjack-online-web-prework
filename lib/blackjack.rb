@@ -30,8 +30,22 @@ def initial_round
  return card_tot
 end
 
-def hit?
-  # code hit? here
+def hit?(card)
+  prompt_user
+  input = get_user_input
+  case input
+  when "s"
+    return card
+  when "h"
+    card += deal_card
+    return card
+  else 
+    invalid_command
+    prompt_user
+    return card
+  end
+  
+
 end
 
 def invalid_command
