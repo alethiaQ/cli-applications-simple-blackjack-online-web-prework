@@ -59,12 +59,13 @@ end
 def runner
   welcome
   initial_round
-  until card_tot > 21 prompt_user
-  input = get_user_input
-  hit?
-  case input
-  when "s"
+    until card_tot > 21 do 
+    prompt_user
+    input = get_user_input
     hit?
+    if input == "s"
+      prompt_user
+    end
   end
   
 end
