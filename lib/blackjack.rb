@@ -59,12 +59,12 @@ end
 def runner
   welcome
   initial_round
-    until display_card_total 21
-    prompt_user
-    input = get_user_input
+    until display_card_total > 21
+    
     hit?
+    input = get_user_input
     if input == "s"
-      prompt_user
+      hit?
     end
   end
 end_game
