@@ -60,12 +60,12 @@ def runner
   welcome
   initial_round
   prompt_user
-  hit?
   input = get_user_input
+  hit?
   case input
   when "s"
     hit?
-
+  end
   
 end
     
