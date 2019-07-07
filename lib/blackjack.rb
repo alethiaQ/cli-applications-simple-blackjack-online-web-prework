@@ -67,6 +67,6 @@ def runner
       prompt_user
     end
   end
-  
+end_game
 end
     
